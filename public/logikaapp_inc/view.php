@@ -1,0 +1,3 @@
+<?php
+// wyświetlenie pojedynczej zakładki
+
