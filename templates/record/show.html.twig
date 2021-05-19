@@ -1,18 +1,18 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-    View record
+    {{ 'title_record_view'|trans }}
 {% endblock %}
 
 {% block body %}
-    <h1>View record</h1>
+    <h1>{{ 'title_record_view'|trans }}</h1>
     {% if item is defined and item|length %}
         <dl>
-            <dt>Title</dt>
+            <dt>{{ 'label_title'|trans }}</dt>
             <dd>{{ item.title }}</dd>
-            <dt>Content</dt>
+            <dt>{{ 'label_content'|trans }}</dt>
             <dd>{{ item.content }}</dd>
-            <dt>Tags</dt>
+            <dt>{{ 'label_tags'|trans }}</dt>
             <dd>{{ item.tags|join(', ') }}</dd>
         </dl>
     {% else %}
@@ -20,4 +20,8 @@
             Record not found.
         </p>
     {% endif %}
+    <p>
+     <a href="{{ url('record_index') }}" title="back to the list">
+        back to the list</a>
+    </p>
 {% endblock %}

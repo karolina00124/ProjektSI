@@ -1,4 +1,7 @@
 <?php
+/**
+ * Przepis entity.
+ */
 
 namespace App\Entity;
 
@@ -7,10 +10,15 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=PrzepisRepository::class)
+ *  @ORM\Table(name="przepisy")
  */
 class Przepis
 {
     /**
+     * Id.
+     *
+     * @var integer
+     *
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
@@ -18,21 +26,37 @@ class Przepis
     private $id;
 
     /**
+     * Info.
+     *
+     * @var string
+     *
      * @ORM\Column(type="string", length=200)
      */
     private $info;
 
     /**
+     * Nazwa.
+     *
+     * @var string
+     *
      * @ORM\Column(type="string", length=65)
      */
     private $nazwa;
 
     /**
+     * Składniki.
+     *
+     * @var string
+     *
      * @ORM\Column(type="text")
      */
     private $skladniki;
 
     /**
+     * Kroki.
+     *
+     * @var string
+     *
      * @ORM\Column(type="text")
      */
     private $kroki;

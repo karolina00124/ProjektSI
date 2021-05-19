@@ -1,4 +1,7 @@
 <?php
+/**
+ * Kategoria entity.
+ */
 
 namespace App\Entity;
 
@@ -7,10 +10,16 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=KategoriaRepository::class)
+ * @ORM\Table(name="kategorie")
  */
 class Kategoria
 {
-    /**
+
+     /**
+     * Id.
+     *
+     * @var integer
+      *
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
@@ -18,6 +27,10 @@ class Kategoria
     private $id;
 
     /**
+     * Nazwa.
+     *
+     * @var string
+     *
      * @ORM\Column(type="string", length=255)
      */
     private $kategoria_nazwa;
