@@ -20,7 +20,7 @@ class TaskFixtures extends AbstractBaseFixtures
      */
     public function loadData(ObjectManager $manager): void
     {
-        for ($i = 0; $i < 10; ++$i) {
+        for ($i = 0; $i < 25; ++$i) {
             $task = new Task();
             $task->setTitle($this->faker->sentence);
             $task->setCreatedAt($this->faker->dateTimeBetween('-100 days', '-1 days'));
