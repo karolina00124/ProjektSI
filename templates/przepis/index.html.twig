@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-    {{ 'title_task_list'|trans }}
+    {{ 'title_przepis_list'|trans }}
 {% endblock %}
 
 {% block body %}
-    <h1>{{ 'title_task_list'|trans }}</h1>
+    <h1>{{ 'title_przepis_list'|trans }}</h1>
     {% if pagination is defined and pagination.items|length %}
 
         <div class="navigation text-center">
@@ -15,22 +15,22 @@
         <table class="table table-striped">
             <thead>
             <tr>
-                <th>{{ knp_pagination_sortable(pagination, 'label_id'|trans, 'task.id') }}</th>
-                <th>{{ knp_pagination_sortable(pagination, 'label_created_at'|trans, 'task.createdAt') }}</th>
-                <th>{{ knp_pagination_sortable(pagination, 'label_updated_at'|trans, 'task.updatedAt') }}</th>
-                <th>{{ knp_pagination_sortable(pagination, 'label_title'|trans, 'task.title') }}</th>
+                <th>{{ knp_pagination_sortable(pagination, 'label_id'|trans, 'przepis.id') }}</th>
+                <th>{{ knp_pagination_sortable(pagination, 'label_created_at'|trans, 'przepis.dataUtworzenia') }}</th>
+
+                <th>{{ knp_pagination_sortable(pagination, 'label_title'|trans, 'przepis.nazwa') }}</th>
                 <th>{{ 'label_actions'|trans }}</th>
             </tr>
             </thead>
             <tbody>
-            {% for task in pagination.items %}
+            {% for przepis in pagination.items %}
                 <tr>
-                    <td>{{ task.id }}</td>
-                    <td>{{ task.createdAt|format_date('long') }}</td>
-                    <td>{{ task.updatedAt|format_date('long') }}</td>
-                    <td>{{ task.title }}</td>
+                    <td>{{ przepis.id }}</td>
+                    <td>{{ przepis.dataUtworzenia|format_date('long') }}</td>
+
+                    <td>{{ przepis.nazwa }}</td>
                     <td>
-                        <a href="{{ url('task_show', {id: task.id}) }}" title="{{ 'action_view'|trans }}">
+                        <a href="{{ url('przepis_show', {id: przepis.id}) }}" title="{{ 'action_view'|trans }}">
                             {{ 'action_view'|trans }}
                         </a>
                     </td>

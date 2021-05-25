@@ -7,6 +7,8 @@ namespace App\Entity;
 
 use App\Repository\PrzepisRepository;
 use Doctrine\ORM\Mapping as ORM;
+use DateTimeInterface;
+
 
 /**
  * @ORM\Entity(repositoryClass=PrzepisRepository::class)
@@ -15,9 +17,9 @@ use Doctrine\ORM\Mapping as ORM;
 class Przepis
 {
     /**
-     * Id.
+     * Primary key.
      *
-     * @var integer
+     * @var int
      *
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -60,6 +62,15 @@ class Przepis
      * @ORM\Column(type="text")
      */
     private $kroki;
+
+    /**
+     * Data utworzenia.
+     *
+     * @var \DateTimeInterface
+     *
+     * @ORM\Column(type="date")
+     */
+    private $dataUtworzenia;
 
     public function getId(): ?int
     {
@@ -110,6 +121,18 @@ class Przepis
     public function setKroki(string $kroki): self
     {
         $this->kroki = $kroki;
+
+        return $this;
+    }
+
+    public function getDataUtworzenia(): ?\DateTimeInterface
+    {
+        return $this->dataUtworzenia;
+    }
+
+    public function setDataUtworzenia(\DateTimeInterface $data_utworzenia): self
+    {
+        $this->dataUtworzenia = $dataUtworzenia;
 
         return $this;
     }

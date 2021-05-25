@@ -3,6 +3,10 @@
     <file source-language="en" datatype="plaintext" original="file.ext">
         <body>
             <trans-unit id="label_actions">
+            <source>action_view</source>
+            <target>Show</target>
+            </trans-unit>
+            <trans-unit id="label_actions">
                 <source>label_actions</source>
                 <target>Actions</target>
             </trans-unit>
@@ -42,13 +46,13 @@
                 <source>title_record_view</source>
                 <target>View record</target>
             </trans-unit>
-            <trans-unit id="title_task_details">
-                <source>title_task_details</source>
-                <target>Task details #%id%</target>
+            <trans-unit id="title_przepis_details">
+                <source>title_przepis_details</source>
+                <target>Recipes details #%id%</target>
             </trans-unit>
-            <trans-unit id="title_task_list">
-                <source>title_task_list</source>
-                <target>Task list</target>
+            <trans-unit id="title_przepis_list">
+                <source>title_przepis_list</source>
+                <target>Recipes list</target>
             </trans-unit>
         </body>
     </file>
