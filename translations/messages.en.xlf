@@ -2,9 +2,13 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file source-language="en" datatype="plaintext" original="file.ext">
         <body>
-            <trans-unit id="label_actions">
-            <source>action_view</source>
-            <target>Show</target>
+            <trans-unit id="action_back_to_list">
+                <source>action_back_to_list</source>
+                <target>Back</target>
+            </trans-unit>
+            <trans-unit id="action_view">
+                <source>action_view</source>
+                <target>Show</target>
             </trans-unit>
             <trans-unit id="label_actions">
                 <source>label_actions</source>
@@ -14,9 +18,9 @@
                 <source>label_id</source>
                 <target>Id</target>
             </trans-unit>
-            <trans-unit id="label_title">
-                <source>label_title</source>
-                <target>Title</target>
+            <trans-unit id="label_kroki">
+                <source>label_kroki</source>
+                <target>Steps</target>
             </trans-unit>
             <trans-unit id="label_content">
                 <source>label_content</source>
@@ -26,9 +30,17 @@
                 <source>label_created_at</source>
                 <target>Created at</target>
             </trans-unit>
+            <trans-unit id="label_skladniki">
+                <source>label_skladniki</source>
+                <target>Ingredients</target>
+            </trans-unit>
             <trans-unit id="label_tags">
                 <source>label_tags</source>
                 <target>Tags</target>
+            </trans-unit>
+            <trans-unit id="label_title">
+                <source>label_title</source>
+                <target>Title</target>
             </trans-unit>
             <trans-unit id="label_updated_at">
                 <source>label_updated_at</source>

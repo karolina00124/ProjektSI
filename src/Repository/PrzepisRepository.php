@@ -35,7 +35,7 @@ class PrzepisRepository extends ServiceEntityRepository
     public function queryAll(): QueryBuilder
     {
         return $this->getOrCreateQueryBuilder()
-            ->orderBy('przepis.nazwa', 'DESC');
+            ->orderBy('przepis.dataUtworzenia', 'DESC');
     }
 
     /**
