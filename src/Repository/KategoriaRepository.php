@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\Kategoria;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\QueryBuilder;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -17,6 +18,25 @@ class KategoriaRepository extends ServiceEntityRepository
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Kategoria::class);
+    }
+
+    /**
+     * Query all records.
+     * @return QueryBuilder Query builder
+     */
+    public function queryAll(): QueryBuilder
+    {
+        return $this
+            ->createQueryBuilder('k')
+            ->orderBy('k.kategoriaNazwa', 'ASC');
+    }
+
+    /**
+     * @return Kategoria[]
+     */
+    public function getAll(): array
+    {
+        return $this->queryAll()->getQuery()->getResult();
     }
 
     // /**

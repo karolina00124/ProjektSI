@@ -1,7 +1,4 @@
 <?php
-/**
- * Kategoria entity.
- */
 
 namespace App\Entity;
 
@@ -14,12 +11,9 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Kategoria
 {
-
-     /**
+    /**
      * Id.
-     *
      * @var integer
-      *
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
@@ -28,12 +22,10 @@ class Kategoria
 
     /**
      * Nazwa.
-     *
      * @var string
-     *
      * @ORM\Column(type="string", length=255)
      */
-    private $kategoria_nazwa;
+    private $kategoriaNazwa;
 
     public function getId(): ?int
     {
@@ -42,13 +34,12 @@ class Kategoria
 
     public function getKategoriaNazwa(): ?string
     {
-        return $this->kategoria_nazwa;
+        return $this->kategoriaNazwa;
     }
 
-    public function setKategoriaNazwa(string $kategoria_nazwa): self
+    public function setKategoriaNazwa(string $kategoriaNazwa): self
     {
-        $this->kategoria_nazwa = $kategoria_nazwa;
-
+        $this->kategoriaNazwa = $kategoriaNazwa;
         return $this;
     }
 }
