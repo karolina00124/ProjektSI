@@ -90,6 +90,6 @@ class __TwigTemplate_a7b096b9c153ed6345c2de4014f548467d8d53eb076dc59682f46cdf0e9
         <li><a href=\"{{ url('przepis_index', {'filters_kategoria_id': k.id}) }}\">{{ k.kategoriaNazwa }}</a></li>
     {% endfor %}
 </ul>
-", "menu.html.twig", "/home/wwwroot/sf/templates/menu.html.twig");
+", "menu.html.twig", "/mnt/c/Users/karol/Programy/PhpstormProjects/test/app/templates/menu.html.twig");
     }
 }

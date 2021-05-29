@@ -98,6 +98,6 @@ class __TwigTemplate_a340533b38f70ed62750bee5d242e332814c2e81ad1de3c2141a052cb53
     {% block body %}
         <h1>Przepisy</h1>
         <p>Kliknij w kategorie</p>
-    {% endblock %}", "homepage/index.html.twig", "/home/wwwroot/sf/templates/homepage/index.html.twig");
+    {% endblock %}", "homepage/index.html.twig", "/mnt/c/Users/karol/Programy/PhpstormProjects/test/app/templates/homepage/index.html.twig");
     }
 }

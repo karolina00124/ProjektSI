@@ -330,6 +330,6 @@ class __TwigTemplate_934fa3fd93d2cb92df4d7823adf29decb32a342d308c111673a249d5dff
         </ul>
     </nav>
 {% endif %}
-", "@KnpPaginator/Pagination/twitter_bootstrap_v4_pagination.html.twig", "/home/wwwroot/sf/vendor/knplabs/knp-paginator-bundle/templates/Pagination/twitter_bootstrap_v4_pagination.html.twig");
+", "@KnpPaginator/Pagination/twitter_bootstrap_v4_pagination.html.twig", "/mnt/c/Users/karol/Programy/PhpstormProjects/test/app/vendor/knplabs/knp-paginator-bundle/templates/Pagination/twitter_bootstrap_v4_pagination.html.twig");
     }
 }

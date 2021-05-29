@@ -413,6 +413,6 @@ class __TwigTemplate_17acb18cab4aefa9490521177530c72a6bdc718b2b2dca6bd397b5d10c8
         </div>
     {% endfor %}
 {% endblock %}
-", "@Debug/Profiler/dump.html.twig", "/home/wwwroot/sf/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
+", "@Debug/Profiler/dump.html.twig", "/mnt/c/Users/karol/Programy/PhpstormProjects/test/app/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
     }
 }

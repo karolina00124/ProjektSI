@@ -482,6 +482,6 @@ class __TwigTemplate_c03be3dd7802c90a861f2d0e2b2d397eed3dd7d699cf0989d28b9f2e6e5
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "/home/wwwroot/sf/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "/mnt/c/Users/karol/Programy/PhpstormProjects/test/app/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
     }
 }

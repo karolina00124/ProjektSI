@@ -27,6 +27,7 @@ class PrzepisFixtures extends AbstractBaseFixtures
             $przepis->setInfo($this->faker->sentence);
             $przepis->setKroki($this->faker->sentence);
             $przepis->setSkladniki($this->faker->sentence);
+
             $this->manager->persist($przepis);
         }
 

@@ -328,18 +328,22 @@ $catalogueEn = new MessageCatalogue('en', array (
   ),
   'messages' => 
   array (
+    'action_back_to_list' => 'Back',
+    'action_view' => 'Show',
     'label_actions' => 'Actions',
     'label_id' => 'Id',
-    'label_title' => 'Title',
+    'label_kroki' => 'Steps',
     'label_content' => 'Content',
     'label_created_at' => 'Created at',
+    'label_skladniki' => 'Ingredients',
     'label_tags' => 'Tags',
+    'label_title' => 'Title',
     'label_updated_at' => 'Updated at',
     'message_empty_list' => 'Empty list.',
     'title_record_list' => 'Records list',
     'title_record_view' => 'View record',
-    'title_task_details' => 'Task details #%id%',
-    'title_task_list' => 'Task list',
+    'title_przepis_details' => 'Recipes details #%id%',
+    'title_przepis_list' => 'Recipes list',
   ),
 ));
 $catalogue->addFallbackCatalogue($catalogueEn);

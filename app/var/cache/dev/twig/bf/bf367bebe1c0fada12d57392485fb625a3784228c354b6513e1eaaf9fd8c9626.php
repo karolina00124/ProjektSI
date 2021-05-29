@@ -83,6 +83,6 @@ class __TwigTemplate_fe0a4c29b12130d872d11e2b2edd3f717f5836ff6fe6b17daacdb8c01ad
     public function getSourceContext()
     {
         return new Source("<a{% for attr, value in options %} {{ attr }}=\"{{ value }}\"{% endfor %}>{{ title }}</a>
-", "@KnpPaginator/Pagination/sortable_link.html.twig", "/home/wwwroot/sf/vendor/knplabs/knp-paginator-bundle/templates/Pagination/sortable_link.html.twig");
+", "@KnpPaginator/Pagination/sortable_link.html.twig", "/mnt/c/Users/karol/Programy/PhpstormProjects/test/app/vendor/knplabs/knp-paginator-bundle/templates/Pagination/sortable_link.html.twig");
     }
 }

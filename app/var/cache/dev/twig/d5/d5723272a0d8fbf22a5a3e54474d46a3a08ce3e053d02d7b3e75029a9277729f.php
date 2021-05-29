@@ -193,6 +193,6 @@ class __TwigTemplate_055415ccca4b5468da32ef961803e625aa43fe1db1b534f11dac0845ed0
         {% block body '' %}
     </body>
 </html>
-", "@WebProfiler/Profiler/base.html.twig", "/home/wwwroot/sf/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/base.html.twig");
+", "@WebProfiler/Profiler/base.html.twig", "/mnt/c/Users/karol/Programy/PhpstormProjects/test/app/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/base.html.twig");
     }
 }

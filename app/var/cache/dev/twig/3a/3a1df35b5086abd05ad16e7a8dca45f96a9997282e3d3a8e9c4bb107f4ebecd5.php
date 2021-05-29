@@ -642,6 +642,6 @@ class __TwigTemplate_1c6c7d9229f8783f86f9ef71cc20df6e8bcf5fc3d8daf9994bf3bfa0a00
         }());
     </script>
 {% endblock %}
-", "@WebProfiler/Profiler/layout.html.twig", "/home/wwwroot/sf/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/layout.html.twig");
+", "@WebProfiler/Profiler/layout.html.twig", "/mnt/c/Users/karol/Programy/PhpstormProjects/test/app/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/layout.html.twig");
     }
 }

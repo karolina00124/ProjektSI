@@ -1671,6 +1671,6 @@ class __TwigTemplate_c3b5bdeb6de97ac9a4e9511c1850717b20dc8dc93ca5efd30374ba5530d
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/home/wwwroot/sf/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/mnt/c/Users/karol/Programy/PhpstormProjects/test/app/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }
