@@ -58,13 +58,29 @@
                 <source>title_record_view</source>
                 <target>View record</target>
             </trans-unit>
+            <trans-unit id="title_kategoria_details">
+                <source>title_kategoria_details</source>
+                <target>Category details #%id%</target>
+            </trans-unit>
             <trans-unit id="title_przepis_details">
                 <source>title_przepis_details</source>
                 <target>Recipes details #%id%</target>
             </trans-unit>
+            <trans-unit id="title_tag_details">
+                <source>title_tag_details</source>
+                <target>Tag details #%id%</target>
+            </trans-unit>
+            <trans-unit id="title_kategoria_list">
+                <source>title_kategoria_list</source>
+                <target>Categories list</target>
+            </trans-unit>
             <trans-unit id="title_przepis_list">
                 <source>title_przepis_list</source>
                 <target>Recipes list</target>
+            </trans-unit>
+            <trans-unit id="title_tag_list">
+                <source>title_tag_list</source>
+                <target>Tags list</target>
             </trans-unit>
         </body>
     </file>

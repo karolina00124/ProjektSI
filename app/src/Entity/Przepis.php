@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\PrzepisRepository;
 use Doctrine\ORM\Mapping as ORM;
 use DateTimeInterface;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Entity(repositoryClass=PrzepisRepository::class)
@@ -50,21 +51,18 @@ class Przepis
     private $kroki;
 
     /**
-     * Kategoria.
-     * @var Kategoria
-     * @ORM\ManyToOne(targetEntity="Kategoria")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="kategoria_id", referencedColumnName="id")
-     * })
-     */
-    private $kategoria;
-
-    /**
      * Data utworzenia.
      * @var \DateTimeInterface
      * @ORM\Column(type="date")
+     * @Gedmo\Timestampable(on="create")
      */
     private $dataUtworzenia;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Kategoria::class, inversedBy="przepis")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $kategoria;
 
     public function getId(): ?int
     {
@@ -126,19 +124,16 @@ class Przepis
         return $this;
     }
 
-    /**
-     * @return Kategoria
-     */
-    public function getKategoria(): Kategoria
+    public function getKategoria(): ?Kategoria
     {
         return $this->kategoria;
     }
 
-    /**
-     * @param Kategoria $kategoria
-     */
-    public function setKategoria(Kategoria $kategoria): void
+    public function setKategoria(?Kategoria $kategoria): self
     {
         $this->kategoria = $kategoria;
+
+        return $this;
     }
+
 }

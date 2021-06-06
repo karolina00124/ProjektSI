@@ -26,4 +26,3 @@ class HomePageController extends AbstractController
 
     }
 }
-?>

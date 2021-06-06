@@ -58,7 +58,9 @@ class __TwigTemplate_a7b096b9c153ed6345c2de4014f548467d8d53eb076dc59682f46cdf0e9
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['k'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 5
-        echo "</ul>
+        echo "
+</ul>
+
 ";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -89,7 +91,9 @@ class __TwigTemplate_a7b096b9c153ed6345c2de4014f548467d8d53eb076dc59682f46cdf0e9
     {% for k in kategorie %}
         <li><a href=\"{{ url('przepis_index', {'filters_kategoria_id': k.id}) }}\">{{ k.kategoriaNazwa }}</a></li>
     {% endfor %}
+
 </ul>
+
 ", "menu.html.twig", "/mnt/c/Users/karol/Programy/PhpstormProjects/test/app/templates/menu.html.twig");
     }
 }

@@ -69,15 +69,47 @@ class __TwigTemplate_f34cb4d0618a3ce6599552593bc5e7948393254af11df21e9de830def1d
         <div class=\"col-sm-9\">
             ";
         // line 18
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 18, $this->source); })()), "session", [], "any", false, false, false, 18), "flashBag", [], "any", false, false, false, 18), "all", [], "any", false, false, false, 18));
+        foreach ($context['_seq'] as $context["type"] => $context["messages"]) {
+            // line 19
+            echo "                ";
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($context["messages"]);
+            foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
+                // line 20
+                echo "                    <div class=\"alert alert-";
+                echo twig_escape_filter($this->env, $context["type"], "html", null, true);
+                echo "\" role=\"alert\">
+                        ";
+                // line 21
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans($context["message"]), "html", null, true);
+                echo "
+                    </div>
+                ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 24
+            echo "            ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['type'], $context['messages'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 25
+        echo "
+            ";
+        // line 26
         $this->displayBlock('body', $context, $blocks);
-        // line 19
+        // line 27
         echo "        </div>
     </div>
 </div>
 ";
-        // line 22
+        // line 30
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 27
+        // line 35
         echo "</body>
 </html>";
         
@@ -121,7 +153,7 @@ class __TwigTemplate_f34cb4d0618a3ce6599552593bc5e7948393254af11df21e9de830def1d
         echo "        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\" integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">
         <link rel=\"stylesheet\" href=\"";
         // line 8
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("index.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/style.css"), "html", null, true);
         echo "\">
     ";
         
@@ -132,7 +164,7 @@ class __TwigTemplate_f34cb4d0618a3ce6599552593bc5e7948393254af11df21e9de830def1d
 
     }
 
-    // line 18
+    // line 26
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -150,7 +182,7 @@ class __TwigTemplate_f34cb4d0618a3ce6599552593bc5e7948393254af11df21e9de830def1d
 
     }
 
-    // line 22
+    // line 30
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -160,7 +192,7 @@ class __TwigTemplate_f34cb4d0618a3ce6599552593bc5e7948393254af11df21e9de830def1d
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 23
+        // line 31
         echo "    <script src=\"https://code.jquery.com/jquery-3.4.1.slim.min.js\" integrity=\"sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n\" crossorigin=\"anonymous\"></script>
     <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js\" integrity=\"sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo\" crossorigin=\"anonymous\"></script>
     <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js\" integrity=\"sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6\" crossorigin=\"anonymous\"></script>
@@ -185,7 +217,7 @@ class __TwigTemplate_f34cb4d0618a3ce6599552593bc5e7948393254af11df21e9de830def1d
 
     public function getDebugInfo()
     {
-        return array (  164 => 23,  154 => 22,  136 => 18,  124 => 8,  121 => 7,  111 => 6,  92 => 5,  81 => 27,  79 => 22,  74 => 19,  72 => 18,  66 => 15,  59 => 10,  57 => 6,  53 => 5,  47 => 1,);
+        return array (  196 => 31,  186 => 30,  168 => 26,  156 => 8,  153 => 7,  143 => 6,  124 => 5,  113 => 35,  111 => 30,  106 => 27,  104 => 26,  101 => 25,  95 => 24,  86 => 21,  81 => 20,  76 => 19,  72 => 18,  66 => 15,  59 => 10,  57 => 6,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -197,7 +229,7 @@ class __TwigTemplate_f34cb4d0618a3ce6599552593bc5e7948393254af11df21e9de830def1d
     <title>{% block title %}Welcome!{% endblock %}</title>
     {% block stylesheets %}
         <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\" integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">
-        <link rel=\"stylesheet\" href=\"{{ asset('index.css') }}\">
+        <link rel=\"stylesheet\" href=\"{{ asset('css/style.css') }}\">
     {% endblock %}
 </head>
 <body>
@@ -207,6 +239,14 @@ class __TwigTemplate_f34cb4d0618a3ce6599552593bc5e7948393254af11df21e9de830def1d
             {{ renderMenu() }}
         </div>
         <div class=\"col-sm-9\">
+            {% for type, messages in app.session.flashBag.all %}
+                {% for message in messages %}
+                    <div class=\"alert alert-{{ type }}\" role=\"alert\">
+                        {{ message|trans }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+
             {% block body %}{% endblock %}
         </div>
     </div>
@@ -217,6 +257,6 @@ class __TwigTemplate_f34cb4d0618a3ce6599552593bc5e7948393254af11df21e9de830def1d
     <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js\" integrity=\"sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6\" crossorigin=\"anonymous\"></script>
 {% endblock %}
 </body>
-</html>", "base.html.twig", "/home/wwwroot/sf/templates/base.html.twig");
+</html>", "base.html.twig", "/mnt/c/Users/karol/Programy/PhpstormProjects/test/app/templates/base.html.twig");
     }
 }

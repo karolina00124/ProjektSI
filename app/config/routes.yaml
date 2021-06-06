@@ -1,9 +1,3 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
-
-
-#index:           //nazwa
- #   path: /      //dla jakiej ścieżki
-  #  controller: App\Controller\HelloWorldController::index
-   # //jaki kawałek kodu (metoda index) ma się wykonać

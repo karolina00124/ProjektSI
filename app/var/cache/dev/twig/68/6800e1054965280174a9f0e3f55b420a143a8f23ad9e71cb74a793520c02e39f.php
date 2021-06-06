@@ -263,6 +263,6 @@ class __TwigTemplate_e1633698b806bf27a28132f18b3db35c7274dfa1a8caecf3de658941d69
             {{ 'message_empty_list'|trans }}
         </p>
     {% endif %}
-{% endblock %}", "przepis/index.html.twig", "/home/wwwroot/sf/templates/przepis/index.html.twig");
+{% endblock %}", "przepis/index.html.twig", "/mnt/c/Users/karol/Programy/PhpstormProjects/test/app/templates/przepis/index.html.twig");
     }
 }

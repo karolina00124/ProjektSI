@@ -16,10 +16,7 @@
         <dt>{{ 'label_title'|trans }}</dt>
         <dd>{{ kategoria.kategorianazwa }}</dd>
     </dl>
-    {% else %}
-        <p>
-            {{ 'message_item_not_found'|trans }}
-        </p>
+
     {% endif %}
     <div class="form-group row float-sm-right">
         <input type="submit" value="{{ 'action_save'|trans }}" class="btn btn-primary" />

@@ -167,50 +167,53 @@ class KategoriaController extends AbstractController
         );
     }
 
-        /**
-         * Delete action.
-         *
-         * @param \Symfony\Component\HttpFoundation\Request $request HTTP request
-         * @param \App\Entity\Kategoria $kategoria Kategoria entity
-         * @param \App\Repository\KategoriaRepository $kategoriaRepository Kategoria repository
-         *
-         * @return \Symfony\Component\HttpFoundation\Response HTTP response
-         *
-         * @throws \Doctrine\ORM\ORMException
-         * @throws \Doctrine\ORM\OptimisticLockException
-         *
-         * @Route(
-         *     "/{id}/delete",
-         *     methods={"GET", "DELETE"},
-         *     requirements={"id": "[1-9]\d*"},
-         *     name="kategoria_delete",
-         * )
-         */
-        public
-        function delete(Request $request, Kategoria $kategoria, KategoriaRepository $kategoriaRepository): Response
-        {
-            $form = $this->createForm(FormType::class, $kategoria, ['method' => 'DELETE']);
-            $form->handleRequest($request);
+    /**
+     * Delete action.
+     *
+     * @param \Symfony\Component\HttpFoundation\Request $request HTTP request
+     * @param \App\Entity\Kategoria $kategoria Kategoria entity
+     * @param \App\Repository\KategoriaRepository $kategoriaRepository Kategoria repository
+     *
+     * @return \Symfony\Component\HttpFoundation\Response HTTP response
+     *
+     * @throws \Doctrine\ORM\ORMException
+     * @throws \Doctrine\ORM\OptimisticLockException
+     *
+     * @Route(
+     *     "/{id}/delete",
+     *     methods={"GET", "DELETE"},
+     *     requirements={"id": "[1-9]\d*"},
+     *     name="kategoria_delete",
+     * )
+     */
+    public
+    function delete(Request $request, Kategoria $kategoria, KategoriaRepository $kategoriaRepository): Response
+    {
+        if($kategoria->getPrzepis()->count()){
+            $this->addFlash('warning','message_category_contains_tasks');
+            return $this->redirectToRoute('kategoria_index');
+        }
+        $form = $this->createForm(FormType::class, $kategoria, ['method' => 'DELETE']);
+        $form->handleRequest($request);
 
-            if ($request->isMethod('DELETE') && !$form->isSubmitted()) {
-                $form->submit($request->request->get($form->getName()));
-            }
-
-            if ($form->isSubmitted() && $form->isValid()) {
-                $kategoriaRepository->delete($kategoria);
-                $this->addFlash('success', 'message.deleted_successfully');
-
-                return $this->redirectToRoute('kategoria_index');
-            }
-
-            return $this->render(
-                'kategoria/delete.html.twig',
-                [
-                    'form' => $form->createView(),
-                    'kategoria' => $kategoria,
-                ]
-            );
+        if ($request->isMethod('DELETE') && !$form->isSubmitted()) {
+            $form->submit($request->request->get($form->getName()));
         }
 
-}
+        if ($form->isSubmitted() && $form->isValid()) {
+            $kategoriaRepository->delete($kategoria);
+            $this->addFlash('success', 'message.deleted_successfully');
 
+            return $this->redirectToRoute('kategoria_index');
+        }
+
+        return $this->render(
+            'kategoria/delete.html.twig',
+            [
+                'form' => $form->createView(),
+                'kategoria' => $kategoria,
+            ]
+        );
+    }
+
+}

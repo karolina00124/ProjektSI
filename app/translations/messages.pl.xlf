@@ -58,13 +58,29 @@
                 <source>title_record_view</source>
                 <target>Wyświetlanie rekordu</target>
             </trans-unit>
+            <trans-unit id="title_kategoria_details">
+                <source>title_kategoria_details</source>
+                <target>Kategoria szczegóły #%id%</target>
+            </trans-unit>
             <trans-unit id="title_przepis_details">
                 <source>title_przepis_details</source>
                 <target>Przepis szczegóły #%id%</target>
             </trans-unit>
+            <trans-unit id="title_tag_details">
+                <source>title_tag_details</source>
+                <target> Tag szczegóły #%id%</target>
+            </trans-unit>
+            <trans-unit id="title_kategoria_list">
+                <source>title_kategoria_list</source>
+                <target>Lista kategorii</target>
+            </trans-unit>
             <trans-unit id="title_przepis_list">
                 <source>title_przepis_list</source>
                 <target>Lista przepisów</target>
+            </trans-unit>
+            <trans-unit id="title_tag_list">
+                <source>title_tag_list</source>
+                <target>Lista tagów</target>
             </trans-unit>
         </body>
     </file>

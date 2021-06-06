@@ -10,7 +10,7 @@ if (in_array(PHP_SAPI, ['cli', 'phpdbg'], true)) {
 }
 
 require dirname(__DIR__, 3).'/vendor/autoload.php';
-require __DIR__.'/ContainerSYpzhZz/srcApp_KernelDevDebugContainer.php';
+require __DIR__.'/ContainerWE8Ih4m/srcApp_KernelDevDebugContainer.php';
 
 $classes = [];
 $classes[] = 'Symfony\Bundle\FrameworkBundle\FrameworkBundle';
@@ -26,6 +26,7 @@ $classes[] = 'Symfony\Bundle\DebugBundle\DebugBundle';
 $classes[] = 'Symfony\Bundle\MakerBundle\MakerBundle';
 $classes[] = 'Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle';
 $classes[] = 'Knp\Bundle\PaginatorBundle\KnpPaginatorBundle';
+$classes[] = 'Symfony\Bundle\WebServerBundle\WebServerBundle';
 $classes[] = 'Symfony\Component\HttpClient\TraceableHttpClient';
 $classes[] = 'Symfony\Contracts\HttpClient\HttpClientInterface';
 $classes[] = 'Symfony\Component\HttpClient\HttpClient';
@@ -38,14 +39,15 @@ $classes[] = 'App\Controller\HomePageController';
 $classes[] = 'App\Controller\KategoriaController';
 $classes[] = 'App\Controller\PrzepisController';
 $classes[] = 'App\Controller\RecordController';
+$classes[] = 'App\Controller\TagController';
 $classes[] = 'App\Controller\TaskController';
+$classes[] = 'App\Form\KategoriaType';
+$classes[] = 'App\Form\PrzepisType';
 $classes[] = 'App\Repository\CategoryRepository';
 $classes[] = 'App\Repository\KategoriaRepository';
-$classes[] = 'App\Repository\NazwaTagStalyRepository';
 $classes[] = 'App\Repository\PrzepisRepository';
 $classes[] = 'App\Repository\RecordRepository';
-$classes[] = 'App\Repository\TagStalyRepository';
-$classes[] = 'App\Repository\TagZmiennyRepository';
+$classes[] = 'App\Repository\TagRepository';
 $classes[] = 'App\Repository\TaskRepository';
 $classes[] = 'App\Repository\UlubioneRepository';
 $classes[] = 'App\Repository\UzytkownikDaneRepository';
@@ -514,5 +516,9 @@ $classes[] = 'Symfony\Bundle\WebProfilerBundle\Controller\RouterController';
 $classes[] = 'Symfony\Bundle\WebProfilerBundle\Csp\ContentSecurityPolicyHandler';
 $classes[] = 'Symfony\Bundle\WebProfilerBundle\Csp\NonceGenerator';
 $classes[] = 'Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener';
+$classes[] = 'Symfony\Bundle\WebServerBundle\Command\ServerRunCommand';
+$classes[] = 'Symfony\Bundle\WebServerBundle\Command\ServerStartCommand';
+$classes[] = 'Symfony\Bundle\WebServerBundle\Command\ServerStatusCommand';
+$classes[] = 'Symfony\Bundle\WebServerBundle\Command\ServerStopCommand';
 
 Preloader::preload($classes);
